@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Hotel Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#b8860b', /* Gold */
+                        darkGold: '#8b6508', /* Darker shade */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Background Image Section -->
+    <div class="relative h-screen">
+        <img src="image/first.png" alt="Hotel Image" 
+            class="absolute inset-0 w-full h-full object-cover brightness-75">
+
+        <!-- Navbar -->
+        <nav class="absolute top-0 left-0 w-full flex justify-between items-center p-4 bg-gold bg-opacity-90 shadow-md">
+            <h1 class="text-xl font-bold text-white">Hotel Management System</h1>
+            
+        </nav>
+
+        <!-- Welcome Message -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+            <h2 class="text-5xl font-bold text-white drop-shadow-lg">Welcome to Luxury</h2>
+            <p class="text-lg text-white mt-2 drop-shadow-md">Experience comfort and elegance with our exclusive hotel services.</p>
+            <div class="mt-6">
+                <a href="login.html" class="px-6 py-3 bg-gold text-white font-semibold rounded-lg shadow-md hover:bg-darkGold transition">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full text-center py-4 bg-black text-gray-400">
+        &copy; 2025 Hotel Management System. All rights reserved.
+    </footer>
+
+</body>
+</html>
